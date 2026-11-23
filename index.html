@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dumbbell Plot: 2022 vs 2024</title>
+
+  <!-- Highcharts core + modules needed for the dumbbell series -->
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+  <script src="https://code.highcharts.com/highcharts-more.js"></script>
+  <script src="https://code.highcharts.com/modules/dumbbell.js"></script>
+  <script src="https://code.highcharts.com/modules/exporting.js"></script>
+  <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+
+  <style>
+    /* Fill the iframe completely */
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      background: transparent;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    /* Chart fills the full width and height */
+    #layout {
+      display: flex;
+      align-items: flex-start;
+      width: 100%;
+      height: 100%;
+      min-height: 300px;
+    }
+    #container {
+      flex: 1 1 auto;
+      min-width: 0;
+      height: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div id="layout">
+    <div id="container"></div>
+  </div>
+  <script src="plot.js"></script>
+</body>
+</html>
